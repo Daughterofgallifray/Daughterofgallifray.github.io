@@ -1,0 +1,299 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Anton);
+@import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
+img{
+	width: 100%;
+}
+body, p, div, a, h1 {
+	margin: 0;
+	text-indent: 0;
+}
+a {
+	cursor: hand;
+	cursor: pointer;
+}
+strong {
+	color: Aquamarine;
+	font-size: 150%;
+}
+body {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	text-transform: uppercase;
+	color: #FFF;
+	background: white url("../images/wood.jpg") repeat center;
+}
+html {
+	scrollbar-base-color: #AAAAAA;
+}
+.centered {
+	text-align:center;
+}
+.centeredHalf {
+	text-align:center;
+	width: 50%;
+}
+.whiteBox{
+	width: 90%;
+	margin: 1em 0;
+	background-color: white;
+	color: black;
+	text-align: center;
+	padding:5%;
+}
+.container {
+	margin-top:2em;
+	display:block;
+}
+.current {
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+.group {
+	page-break-inside:avoid;
+}
+.dropIn {
+	-webkit-animation-name: dropIn;
+	-webkit-animation-duration:1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in;
+	animation-name: dropIn;
+	animation-duration:1s;
+	animation-iteration-count:1;
+	animation-timing-function: ease-in;
+}
+@-webkit-keyframes dropIn{
+	0% {-webkit-transform: translate(0px,-400px);}
+	75% {-webkit-transform: translate(0px,50px);}
+	85% {-webkit-transform: translate(0px,-10px);}
+	98% {-webkit-transform: translate(0px,2px);}
+	100% {-webkit-transform: translate(0px,0px);}
+}
+@keyframes dropIn{
+	0% {transform: translate(0px,-400px);}
+	75% {transform: translate(0px,50px);}
+	85% {transform: translate(0px,-10px);}
+	98% {transform: translate(0px,2px);}
+	100% {transform: translate(0px,0px);}
+}
+.popUp{
+	-webkit-animation-name: popUp;
+	-webkit-animation-duration:1.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in;
+	animation-name: popUp;
+	animation-duration:1.5s;
+	animation-iteration-count:1;
+	animation-timing-function: ease-in;
+}
+@-webkit-keyframes popUp{
+	0% {-webkit-transform: translate(0px,1200px);}
+	75% {-webkit-transform: translate(0px,-50px);}
+	85% {-webkit-transform: translate(0px,10px);}
+	98% {-webkit-transform: translate(0px,-2px);}
+	100% {-webkit-transform: translate(0px,0px);}
+}
+@keyframes popUp{
+	0% {transform: translate(0px,1200px);}
+	75% {transform: translate(0px,-50px);}
+	85% {transform: translate(0px,10px);}
+	98% {transform: translate(0px,-2px);}
+	100% {transform: translate(0px,0px);}
+}
+.popDown{
+	-webkit-animation-name: popDown;
+	-webkit-animation-duration:.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in;
+	animation-name: popDown;
+	animation-duration:.5s;
+	animation-iteration-count:1;
+	animation-timing-function: ease-in;
+}
+@-webkit-keyframes popDown{
+	0% {-webkit-transform: translate(0px,0px);}
+	100% {-webkit-transform: translate(0px,1200px);}
+}
+@keyframes popDown{
+	0% {transform: translate(0px,0px);}
+	100% {transform: translate(0px,1200px);}
+}
+.link {
+	color:#FFF;
+	text-decoration:underline;
+}
+.navbar {
+	font-size: 1.5em;
+	padding:.5em;
+	background-color: white;
+	color: #ffcc99;
+	font-weight: bold;
+	text-align: left;
+	width: 100%;
+	opacity: .8;
+	margin: 0;
+	text-align: center;
+}
+.navBarLeft{
+}
+#twitterwrapper {
+	height: 80%;
+	width: 50%;
+	margin:5% auto;
+	position: relative;
+	z-index: 111;
+}
+.text {
+	font-size: 1em;
+	font-style: normal;
+	text-align: left;
+	margin:.25em;
+	color: #black;
+	line-height: 1.5em;
+	text-indent: 1.5em;
+}
+.textleft {
+	background-color: #f5f5f5;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	font-size: small;
+	font-style: normal;
+	text-align: left;
+	margin:.25em 10% .25em 10%;
+	padding: 1em;
+	color: #000;
+}
+.hidden {
+	opacity: 0;
+	display:none;
+    visibility: hidden;
+}
+img.divider {
+    max-width: 100%;
+    display:block;
+    margin: 0 auto;
+}
+
+.active {
+	color: #FFF;
+	font-size:150%;
+	cursor: hand;
+	cursor: pointer;
+	background-color: #999;
+	border-radius: 15px;
+	padding:7px;	
+    box-shadow: 2px 2px 10px #888;
+	-webkit-animation-name: glow;
+	-webkit-animation-duration:4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in;
+	animation-name: glow;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in;
+	opacity: 1;
+	text-transform: uppercase;
+}
+.inactive {
+	font-size:75%;
+	color:#fff;
+	cursor: hand;
+	cursor: pointer;
+	background-color: #999;
+	border-radius: 15px;
+	padding:7px;	
+    box-shadow: 2px 2px 10px #888;
+}
+.third{
+	width: 30%;
+}
+.glow {
+	-webkit-animation-name: glow;
+	-webkit-animation-duration:4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in;
+	animation-name: glow;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in;
+}
+@-webkit-keyframes glow{
+	0% {opacity: .5;}
+	50% {opacity: 1;}
+	100% {opacity: .5;}
+}
+@keyframes glow{
+	0% {opacity: .5;}
+	50% {opacity: 1;}
+	100% {opacity: .5;}
+}
+div.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+div.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.twitter-timeline {
+	width: 100%;
+	height: 600px;
+}
+.rodderImages{
+	margin-top: 1.5em;
+	text-align: center;
+}
+#theContent{
+	position: relative;
+	padding-top: 3em;
+	padding-bottom: 2em;
+	width: 100%;
+}
+#theContent > div > div,img{
+	border: thick solid white;
+	background-color: white;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: black;
+}
+.h2em{
+	height: 2em;
+}
+@media (min-width : 769px) {
+	#theContent{
+		width: 85%;
+		margin: 0 7.5%;
+	}
+	.leftHalf{
+		width: 48%;
+		float:left;
+	}
+	#theContent > div > div,img{
+		margin: 1em 1%;
+	}
+	.rightHalf{
+		width: 48%;
+		float:right;
+	}
+	.navbar{
+		position: fixed;
+		top:0;
+		left:0;
+		z-index: 99;
+	}
+}
+@media (min-width: 1025px) {
+	#theContent{
+		width: 70%;
+		margin:0 15%;
+	}
+}
