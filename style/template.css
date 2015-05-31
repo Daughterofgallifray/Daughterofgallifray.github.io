@@ -18,7 +18,6 @@ strong {
 }
 body {
 	font-family: 'Ubuntu Condensed', sans-serif;
-	text-transform: uppercase;
 	color: #FFF;
 	background: white url("../images/wood.jpg") repeat center;
 }
@@ -195,7 +194,6 @@ img.divider {
 	animation-iteration-count:infinite;
 	animation-timing-function: ease-in;
 	opacity: 1;
-	text-transform: uppercase;
 }
 .inactive {
 	font-size:75%;
