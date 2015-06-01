@@ -1,6 +1,6 @@
 window.addEventListener('load', eventWindowLoaded, false);	
 function eventWindowLoaded() {
-	window.scrollTo(500, 0);
+	window.scrollTo(0, 0);
 	document.body.style.overflow = 'hidden';
 	setTimeout(function() {
 		document.body.style.overflow = 'auto';
